@@ -1,0 +1,176 @@
+/*Set the font to Open Sans and the color to Black*/
+body,html {
+	width : 100%;
+	height: 100%;
+	margin: 0 auto;
+	font-family: "Open Sans",sans-serif;
+	color:#000;
+}
+
+
+/*********************** Navbar Styling ******************************/
+
+/*Set the navbar height to 60px, make it black, and increase font size*/
+#my-nav { height: 60px; font-size:1.8rem; background-color:#000; }
+
+/*Set the links to white, and add CSS3 transition*/
+#my-nav a{
+	color:#fff;
+	transition: border-bottom 0.5s ease-out;
+	border-bottom: 3px solid #000;
+}
+
+/*On hover on the links put a red bottom border on it*/
+#my-nav a:hover{
+	border-bottom: 3px solid #C30404;
+}
+
+/*Set the text on the top left of navbar, make it bigger, white and space out the letters*/
+#tomYoung{
+	color:#fff; 
+	font-size:30px; 
+	letter-spacing:4px; 
+	line-height:1
+}
+/**************** End navbar styling *****************/
+
+
+/********************** General Styling for the content *******************/
+
+/*Set the h1 to be larger, and pad it out*/
+h1{
+	padding-top:50px;
+	padding-bottom:20px;
+	margin:0px;
+}
+
+/*Sets the element to be in the vertical middle of its parent*/
+.verticalAlign{
+	top: 50%;
+	transform: translateY(-50%);
+	position:relative;
+}
+
+/*Sets the vertical padding, fixed height, text align, and CSS3 transition for on hover*/
+.tile{
+	padding:25px 0px;
+	height:300px;
+	text-align:center;
+	transition: background-color 0.5s ease-out;
+}
+
+/*Sets the Contact footer section to black*/
+.tileBlack{
+	background-color:#000;
+	color:#fff;
+}
+
+/*Sets the default tile hover effect, changes background to black, and font to white*/
+.tile:hover{
+	background-color:#000;
+	color:#fff;
+}
+
+/*Alternative tile hover effect, changes background to red and font to white*/
+.tileRed:hover{
+	background-color:#C30404;
+	color:#fff;
+}
+
+/*Sets the style of the text in the tiles. puts it in the middle, and removes the list styling*/
+.tile ul{
+	list-style: none;
+	top: 50%;
+	transform: translateY(-50%);
+	position:relative;
+	padding-left:0;
+}
+
+/*Gives extra spacing between list items, and makes font bigger*/
+.tile ul li{
+	padding:2px 0px;
+	font-size:1.8rem;
+}
+
+
+
+/**************************** Skills Section Navigation Styling ****************************/
+/*Add padding at bottom*/
+.skillsNavigation{
+	padding-bottom:10px;
+}
+/*Remove list bullets*/
+.skillsNavigation ul{
+	list-style-type: none;
+}
+
+/*Put the list items in a horizontal line, make font bigger, and space out items*/
+.skillsNavigation ul li{
+	display: inline;
+	font-size:22px;
+	margin:0px 30px;
+	padding-bottom:5px;
+	border-bottom: 3px solid #fff;
+}
+
+/*When the nav items are hovered add a red bottom border, and change cursor to pointer*/
+.skillsNavigation ul li:hover{
+	border-bottom: 3px solid #C30404;
+	cursor:pointer;
+}
+
+/*add padding to top of list*/
+.skills ul{
+	padding:0px 20px;
+}
+/************ End Skills Navigation Styling *****************/
+
+
+
+/* h1 headings with lines each side */
+/* Taken from http://stackoverflow.com/questions/15557627/heading-with-horizontal-line-on-either-side by user electrophanteau*/
+.decorated{
+     overflow: hidden;
+     text-align: center;
+ }
+.decorated > span{
+    position: relative;
+    display: inline-block;
+}
+.decorated > span:before, .decorated > span:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    border-bottom: 2px solid;
+    width: 592px; /* half of limiter */
+    margin: 0 20px;
+}
+
+.decorated > span:before{
+    right: 100%;
+}
+.decorated > span:after{
+    left: 100%;
+}
+/**** End h1 with lines on side ****/
+
+
+/*Sets Cinema image to be full screen height*/
+.parallax-window {
+    min-height: 100vh;
+    background: transparent;
+}
+
+
+/* Changes the skills navigation to become vertical when screen is sized too small to fit them horizontally*/
+@media only screen and (max-width: 1050px) {
+		
+	.skillsNavigation ul li{
+		display:block;
+	}
+
+}
+
+
+
+
